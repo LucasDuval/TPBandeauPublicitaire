@@ -53,6 +53,12 @@ public class Scenario {
     	this.effects.add(e);
     	return this;
     }
+    public Scenario ajouteMultipleEffets(AbstractEffect e,int n) {
+    	for (int i = 0; i < n; i++) {
+			this.ajouteEffet(e);
+		}
+    	return this;
+    }
     public Bandeau getBandeau() {
     	return b;
     }
